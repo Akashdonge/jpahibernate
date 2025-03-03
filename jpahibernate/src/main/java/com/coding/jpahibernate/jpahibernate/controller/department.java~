@@ -1,0 +1,18 @@
+package com.coding.jpahibernate.jpahibernate.controller;
+
+import org.springframework.web.bind.annotation.*;
+
+@RequestMapping("/department")
+@RestController
+public class department {
+    @GetMapping("/{depid}")
+    public String department(@PathVariable(name = "depid" ) Integer id) {
+        return "department"+id;
+    }
+    @GetMapping("/all")
+    public String all(@RequestParam(required = false) int age,@RequestParam(required = false) String name){
+        return "all";
+    }
+
+
+}

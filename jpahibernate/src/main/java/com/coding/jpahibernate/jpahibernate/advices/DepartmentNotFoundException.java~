@@ -1,0 +1,4 @@
+package com.coding.jpahibernate.jpahibernate.exceptions;
+
+public class DepartmentNotFoundException {
+}
